@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Bookmarklets
+            Changelog
         </title>
     </head>
     <body style = "background-color: #33414a; scroll-behavior: smooth;">
@@ -140,60 +140,51 @@
                 margin-bottom: 13px;
             }
         </style>
-
+        
         <h4 class = "page">
-            Home / Bookmarklets
+            Home / Changelog
         </h4>
 
         <h1 class = "title">
             <b>
-                Bookmarklets
+                Changelog
             </b>
         </h1>
 
         <h2 class = "quote">
             <i>
-                Little JavaScript scripts that do interesting things
-                <br>
-                Click a button to copy the bookmarklet to your clipboard, and add a bookmark saying "javascript:" and then the code, and you've got your bookmarklet!
+                Changes made to the website
             </i>
         </h2>
-
-        <h1 class = "subtitle">
-            <b>
-                Utility
-            </b>
-        </h1>
-
-        <button class = "buttonmajor" onclick = "copycode()">
-            Inspect Element
-            <script>
-                function copycode() {
-                    navigator.clipboard.writeText("if (document.body.contentEditable == 'false') {document.body.contentEditable = 'true';document.designMode = 'on'; void 0;} else {document.body.contentEditable = 'false';document.designMode = 'off';void 0;}");
-                }
-            </script>
-        </button>
-
-        <button class = "buttonmajor" onclick = "copycode()">
-            Website Embedder
-            <script>
-                function copycode() {
-                    navigator.clipboard.writeText("var url = prompt("What is the website URL that you would like to embed?", "");var wrapper = document.createElement('div');var ifrm = document.createElement("iframe");ifrm.src = "https://" + url + "/";ifrm.style.width = "1280px";ifrm.style.height = "860px";wrapper.appendChild(ifrm);document.body.appendChild(wrapper);");
-                }
-            </script>
-        </button>
-        
-        <h1 class = "subtitle">
-            <b>
-                Fun
-            </b>
-        </h1>
-        
-        <button class = "buttonmajor">
-            jsRPG (Coming soon!)</button>
 
         <button class = "button" onclick = "location.href = 'index.html';">
             Back
         </button>
+
+        <h1 class = "subtitle">
+            <b>
+                Version 1.1
+            </b>
+        </h1>
+
+        <h3 class = "text">
+            <b>
+                Added a changelog
+                <br>
+                Added website embedder bookmarklet
+            </b>    
+        </h3>
+
+        <h1 class = "subtitle">
+            <b>
+                Version 1.0
+            </b>
+        </h1>
+
+        <h3 class = "text">
+            <b>
+                Website Release
+            </b>    
+        </h3>
     </body>
 </html>
